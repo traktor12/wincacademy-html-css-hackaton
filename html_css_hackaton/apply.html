@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="nav_logo">
+          <button>|||</button>
+          <img src="/pics/icon.png" alt="logo" />
+          <span id="nav_name">Hack's Snacks</span>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="apply.html">Apply</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form id="application_form">
+          <span id="fname">
+            <label for="fname" required>First name</label>
+            <input type="text" name="fname" />
+          </span>
+
+          <span id="lname">
+            <label for="lname" required>Last name</label>
+            <input type="text" name="lname" />
+          </span>
+
+          <span id="phone">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" />
+          </span>
+
+          <span id="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" />
+          </span>
+
+          <span id="position">
+            Choose position
+            <br />
+            <label for="position" class="rl">Cook</label>
+            <input type="radio" name="position" value="cook" />
+            <br />
+            <label for="position" class="rl">Waiter</label>
+            <input type="radio" name="position" value="waiter" />
+            <br />
+            <label for="position" class="rl">Dishwasher</label>
+            <input type="radio" name="position" value="dishwasher" />
+            <br />
+            <label for="position" class="rl">Delivery</label>
+            <input type="radio" name="position" value="delivery" />
+            <br />
+          </span>
+
+          <span id="cv">
+            <label for="cv">CV</label>
+            <input type="file" name="cv" />
+          </span>
+
+          <input type="submit" name="submit" value="SUBMIT" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
